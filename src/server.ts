@@ -44,7 +44,7 @@ if (isDevelopment) {
 
 // deneme route'u
 app.get("/", (req, res) => {
-  res.json({ message: "Backend Hayatta..." });
+  res.json({ message: "Backend Hayatta...", date: new Date().toLocaleDateString("tr") });
 });
 
 // route'ları projeye tanıt
